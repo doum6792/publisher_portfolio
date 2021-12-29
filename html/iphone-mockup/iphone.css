@@ -1,0 +1,152 @@
+body{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.mockup{
+}
+.mockup_inner{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 430px;
+    height: 850px;
+    border-radius: 30px;
+}
+.mockup_inner::before{
+    content: "";
+    position: absolute;
+    width: 97.5%;
+    height: 98.5%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 10px solid #ddd;
+    border-radius: 27px;
+}
+
+.display{
+    position: absolute;
+    width: 400px;
+    height: 600px;
+/*     background: #eee; */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 27px;
+ /*    overflow-x: hidden; */
+}
+.display iframe{
+    width: 400px;
+    height: 100%;
+    overflow-x: hidden;
+    border: 1px solid #eee
+}
+.camera{
+    position: absolute;
+    width: 300px;
+    height: 60px;
+    top: 5%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.camera span{
+    position: absolute;
+}
+.camera span:nth-child(1){
+    width: 80px;
+    height: 6px;
+    background: #ddd;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+.camera span:nth-child(2){
+    width: 20px;
+    height: 20px;
+    background: #ddd;
+    border-radius: 50%;
+    top: 50%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+}
+.camera span:nth-child(3){
+    width: 10px;
+    height: 10px;
+    background: #ddd;
+    border-radius: 50%;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.volume{
+/*     border: 1px solid #000; */
+    width: 10px;
+    height: 200px;
+    position: absolute;
+    left: -10px;
+    top: 80px;
+}
+.volume span{
+    position: absolute;
+    background: #eee;
+    border-radius: 5px 0 0 5px;
+}
+.volume span:nth-child(1){
+    height: 30px;
+    width: 10px;
+}
+.volume span:nth-child(2){
+    height: 70px;
+    width: 10px;
+    top: 40px;
+}
+.volume span:nth-child(3){
+    height: 30px;
+    width: 10px;
+    top: 130px;
+}
+.power{
+    width: 10px;
+    height: 200px;
+    position: absolute;
+    right: -10px;
+    top: 80px;
+}
+.power span{
+    position: absolute;
+    background: #eee;
+    border-radius: 0 5px 5px 0;
+    height: 30px;
+    width: 10px;
+}
+.power span{}
+.button{
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 400px;
+    height: 60px;
+}
+.button span{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: #eee;
+}
+.button span::before{
+    content: "";
+    width: 97%;
+    height: 97%;
+    position: absolute;
+    box-shadow: inset 2px 2px 5px gray;
+    border-radius: 50%;
+}
