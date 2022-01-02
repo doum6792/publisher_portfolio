@@ -1,0 +1,103 @@
+@charset "utf-8";
+@media (max-width : 768px) {
+    /* common css */
+    .inner{
+        width: 100%;
+        flex-direction: column;
+        padding: 0 20px;
+    }
+    .preview{order: 1;}
+    .desc h2{text-align: center;}
+    .desc p{text-align: center;}
+    /* ---------------header------------------- */
+    .logo a{
+        display: block;
+        width: 100%;
+        height: 100%;
+    }
+    .logo a img{
+        display: block;
+        width: 100px;
+        vertical-align: middle;
+    }
+    header button{
+        font-size: 14px;
+        padding: 4px 10px;
+        vertical-align: middle;
+    }
+    /* ------------section: welcome----------------- */
+    .welcome{width: 100%;}
+    .heading h2{font-size: 20px;}
+    .heading h5{font-size: 18px;}
+    .heading p{font-size: 11px;}
+    .getstarted input[type=email]{width: 200px;}
+    .getstarted span{
+        font-size: 14px;
+        position: absolute;
+        left: 280px;
+        top: 20px;
+        color: #222;
+        transition: 0.3s;
+    }
+    .preview img{width: 95%;}
+    .getstarted.active span{
+        font-size: 12px;
+        top: 0px;
+        left: 270px;
+    }
+    .getstarted button{
+        width: 80px;
+        font-size: 12px;
+    }
+    /* --------------section: faq----------------- */
+    .faq{width: 100%;}
+    .faq_inner{
+        width: 100%;
+        padding: 0 20px;
+    }
+    .faq_inner h2{font-size: 30px;}
+    .faq_inner h3{font-size: 20px;}
+    .faq_membership h2{font-size: 20px;}
+    .faq_membership input[type=email], .faq_membership button{height: 45px;}
+    .faq_membership input[type=email]{
+        width: 300px;
+        font-size: 16px;
+    }
+    .faq_text p{
+        line-height: 1.6em;
+        text-align: center
+    }
+    .faq_membership button{
+        width: 110px;
+        font-size: 16px;
+    }
+    .faq_membership span{
+        font-size: 12px;
+        left: 120px;
+        top: 135px;
+    }
+    .faq_membership.active span{
+        left: 30px;
+        top: 120px;
+        font-size: 10px;
+    }
+    /* ---------------footer--------------- */
+    .footer_inner{
+        padding: 0 20px;
+        width: 100%;
+        text-align: center;
+    }
+    .footer_nav{text-align: center;}
+    .footer_nav li{
+        float: none;
+        width: 50%;
+        margin: 0 auto;
+    }
+    .footer_nav li a{display: block;}
+    .footer_nav li a:hover{
+        border: none;
+        color: white;
+    }
+    select{padding: 10px 10px;}
+    .modal_login{height: 400px;}
+}

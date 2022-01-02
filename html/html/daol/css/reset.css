@@ -1,0 +1,29 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+ul, ol, li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+.clear{
+    clear: both;
+}
+.clear_fix::before, .clear_fix::after{
+    display: block;
+    content: "";
+    clear: both;
+}
+table{
+    border-collapse: collapse;
+}
+body{
+    font-size: 14px;
+    font-family: 'Urbanist', sans-serif;
+    height: 3000px;
+}
